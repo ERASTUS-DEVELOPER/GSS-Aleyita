@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/toTop.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="shortcut icon" href="./asset/Aleyita Logo.png" type="image/x-icon">
+</head>
+<body>
+     <header>
+        <!-- NavBar Code -->
+        <nav>
+            <div class="navbar">
+                <i class="bx bx-menu"></i>
+                <div class="img">
+                    <img src="./asset/Aleyita Logo.png" alt="Aleyita Logo">
+                </div>
+                <div class="logo"><a href="#">GSS Aleyita</a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <span class="logo_name">GSS Aleyita</span>
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        
+                        <li>
+                            <a href="./aboutUs.html">About Us</a>
+                            <i class='bx bxs-chevron-down arrow about-us'></i>
+                            <ul class="about-us-sub-menu sub-menu">
+                                <a href="./aboutUs.html"><li>Origin of GSS Aleyita</li></a>
+                                <a href="./aboutUs.html"><li>Goals, Aims & Objectives</li></a>
+                                <a href="./aboutUs.html"><li>Extra Curriculum Events</li></a>
+                                <a href="./staffs.html"><li>Staff Profiles</li></a>
+                                <a href="./prefects.html"><li>Prefects</li></a>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="./ourMedia.html">Our Media</a></li>
+                        
+                        <li>
+                            <a href="./pta.html">P.T.A</a>
+                            <i class='bx bxs-chevron-down arrow pta'></i>
+                            <ul class="pta-sub-menu sub-menu">
+                                <a href="./pta.html"><li>About P.T.A</li></a>
+                                <a href="./pta.html"><li>Excos</li></a>
+                                <a href="./pta.html"><li>Meeting Schedule</li></a>
+                                <a href="./pta.html"><li>Achievments</li></a>
+                                <a href="./pta.html"><li>Projects</li></a>
+                                <a href="./pta.html"><li>News</li></a>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#hero">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="search-box">
+                    <i class='bx bx-search-alt-2'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search.....">
+                    </div> -->
+                    <div class="search-box">
+                        <i class='bx bx-search-alt-2'></i>
+                        <form action="https://www.google.com" method="GET">
+                            <div class="input-box">
+                                <input 
+                                        type="search" 
+                                    name="q" 
+                                    placeholder="Search anything..." 
+                                    autocomplete="off" 
+                                    required>
+                                <button type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION 1: INTRO HERO -->
+    <section class="hero" id="hero">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Get In Touch</span>
+            <h1>Contact Us</h1>
+            <p>
+                We'd love to hear from you. Reach out with questions, suggestions, 
+                or feedback.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT INFO -->
+    <section class="info-section">
+        <div class="container">
+            <div class="section-header animate">
+                <span>Reach Us</span>
+                <h2>Contact Information</h2>
+                <p>Multiple ways to connect with our Administrative team.</p>
+            </div>
+            <div class="info-grid animate scale" id="infoGrid"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: GOOGLE MAP -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header animate">
+                <span>Location</span>
+                <h2>Find Us on the Map</h2>
+                <p>Visit us at our school campus.</p>
+            </div>
+            <div class="map-wrap animate scale">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952.9860512553698!2d7.402299580951963!3d8.992375322800985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e730590655015%3A0xcf2df0344ad63d46!2sChika%20Bridge%20Across!5e1!3m2!1sen!2sng!4v1772516806329!5m2!1sen!2sng" 
+                    title="School Location"
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+    
+    </div>
+
+    <!-- To Top Button -->
+    <button class="toTop" id="toTopBtn" title="Go to top">
+        <i class='bx bxs-chevron-up'></i>
+    </button>
+
+    <script src="./js/toTop.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+</html>

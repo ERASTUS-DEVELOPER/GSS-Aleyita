@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Media</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/toTop.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/ourMedia2.css">
+    <link rel="shortcut icon" href="./asset/Aleyita Logo.png" type="image/x-icon">
+</head>
+<body>
+     <header>
+        <!-- NavBar Code -->
+        <nav>
+            <div class="navbar">
+                <i class="bx bx-menu"></i>
+                <div class="img">
+                    <img src="./asset/Aleyita Logo.png" alt="Aleyita Logo">
+                </div>
+                <div class="logo"><a href="#">GSS Aleyita</a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <span class="logo_name">GSS Aleyita</span>
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        
+                        <li>
+                            <a href="./aboutUs.html">About Us</a>
+                            <i class='bx bxs-chevron-down arrow about-us'></i>
+                            <ul class="about-us-sub-menu sub-menu">
+                                <a href="./aboutUs.html"><li>Origin of GSS Aleyita</li></a>
+                                <a href="./aboutUs.html"><li>Goals, Aims & Objectives</li></a>
+                                <a href="./aboutUs.html"><li>Extra Curriculum Events</li></a>
+                                <a href="./staffs.html"><li>Staff Profiles</li></a>
+                                <a href="./prefects.html"><li>Prefects</li></a>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#hero">Our Media</a></li>
+                        
+                        <li>
+                            <a href="./pta.html">P.T.A</a>
+                            <i class='bx bxs-chevron-down arrow pta'></i>
+                            <ul class="pta-sub-menu sub-menu">
+                                <a href="./pta.html"><li>About P.T.A</li></a>
+                                <a href="./pta.html"><li>Excos</li></a>
+                                <a href="./pta.html"><li>Meeting Schedule</li></a>
+                                <a href="./pta.html"><li>Achievments</li></a>
+                                <a href="./pta.html"><li>Projects</li></a>
+                                <a href="./pta.html"><li>News</li></a>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="search-box">
+                    <i class='bx bx-search-alt-2'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search.....">
+                    </div> -->
+                    <div class="search-box">
+                        <i class='bx bx-search-alt-2'></i>
+                        <form action="https://www.google.com" method="GET">
+                            <div class="input-box">
+                                <input 
+                                        type="search" 
+                                    name="q" 
+                                    placeholder="Search anything..." 
+                                    autocomplete="off" 
+                                    required>
+                                <button type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION 1: INTRO HERO -->
+    <section class="hero" id="hero">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Inovative Minds</span>
+            <h1>Our Media</h1>
+            <p>
+                We come together to express and communicate
+                with one another, Celebrating moments from our school community.
+            </p>
+        </div>
+    </section>
+
+    <section id="ourMedia">
+        <div class="container">
+            <!-- Hero Slider -->
+            <div class="slider-container" data-engine="slider">
+                <div class="slide active">
+                    <img src="./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg" alt="Highlight 1">
+                </div>
+                <div class="slide">
+                    <img src="./asset/Casa_Para_Estudiantes_Atras_by_estevao.jpg" alt="Highlight 2">
+                </div>
+                <div class="slide">
+                    <img src="./asset/Exterior_Classic_house_by_GTOdesign.jpg" alt="Highlight 3">
+                </div>
+                <div class="slide">
+                    <img src="./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg" alt="Highlight 4">
+                </div>
+                <div class="slide">
+                    <img src="./asset/Casa_Para_Estudiantes_Atras_by_estevao.jpg" alt="Highlight 5">
+                </div>
+                <div class="slide">
+                    <img src="./asset/Exterior_Classic_house_by_GTOdesign.jpg" alt="Highlight 6">
+                </div>
+
+                <div class="slider-nav">
+                    <button class="prev" title="Previous Slide">&#10094;</button>
+                    <button class="next" title="Next Slide">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">
+                    <i class='bx bx-images'></i> All Events
+                </button>
+                <button class="category-btn" data-category="sports">
+                    <i class='bx bx-football'></i> Sports
+                </button>
+                <button class="category-btn" data-category="academics">
+                    <i class='bx bx-book'></i> Academics
+                </button>
+                <button class="category-btn" data-category="arts">
+                    <i class='bx bx-palette'></i> Arts
+                </button>
+                <button class="category-btn" data-category="community">
+                    <i class='bx bx-group'></i> Community
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <p>No images found in this category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+        
+        <div class="lightbox-content">
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <div class="lightbox-title" id="lightboxTitle"></div>
+                <div class="lightbox-description" id="lightboxDescription"></div>
+                <div class="lightbox-date" id="lightboxDate"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- To Top Button -->
+    <button class="toTop" id="toTopBtn" title="Go to top">
+        <i class='bx bxs-chevron-up'></i>
+    </button>
+
+    <script src="./js/toTop.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/ourMedia2.js"></script>
+</body>
+</html>

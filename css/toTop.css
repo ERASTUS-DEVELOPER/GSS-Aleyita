@@ -1,0 +1,48 @@
+/* ========== TO TOP BUTTON ========== */
+.toTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #3e8ea8;
+  color: #0f1419;
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 50;
+}
+
+.toTop.show {
+  display: flex;
+}
+
+.toTop:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 9px 0.5px #000;
+}
+
+.toTop:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.toTop:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}

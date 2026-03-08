@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefects</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/prefects.css">
+    <link rel="stylesheet" href="./css/toTop.css">
+    <link rel="shortcut icon" href="./asset/Aleyita Logo.png" type="image/x-icon">
+</head>
+<body>
+     <header>
+        <!-- NavBar Code -->
+        <nav>
+            <div class="navbar">
+                <i class="bx bx-menu"></i>
+                <div class="img">
+                    <img src="./asset/Aleyita Logo.png" alt="Aleyita Logo">
+                </div>
+                <div class="logo"><a href="#">GSS Aleyita</a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <span class="logo_name">GSS Aleyita</span>
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        
+                        <li>
+                            <a href="./aboutUs.html">About Us</a>
+                            <i class='bx bxs-chevron-down arrow about-us'></i>
+                            <ul class="about-us-sub-menu sub-menu">
+                                <a href="./aboutUs.html"><li>Origin of GSS Aleyita</li></a>
+                                <a href="./aboutUs.html"><li>Goals, Aims & Objectives</li></a>
+                                <a href="./aboutUs.html"><li>Extra Curriculum Events</li></a>
+                                <a href="./staffs.html"><li>Staff Profiles</li></a>
+                                <a href="./prefects.html"><li>Prefects</li></a>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="./ourMedia.html">Our Media</a></li>
+                        
+                        <li>
+                            <a href="./pta.html">P.T.A</a>
+                            <i class='bx bxs-chevron-down arrow pta'></i>
+                            <ul class="pta-sub-menu sub-menu">
+                                <a href="./pta.html"><li>About P.T.A</li></a>
+                                <a href="./pta.html"><li>Excos</li></a>
+                                <a href="./pta.html"><li>Meeting Schedule</li></a>
+                                <a href="./pta.html"><li>Achievments</li></a>
+                                <a href="./pta.html"><li>Projects</li></a>
+                                <a href="./pta.html"><li>News</li></a>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="search-box">
+                    <i class='bx bx-search-alt-2'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search.....">
+                    </div> -->
+                    <div class="search-box">
+                        <i class='bx bx-search-alt-2'></i>
+                        <form action="https://www.google.com" method="GET">
+                            <div class="input-box">
+                                <input 
+                                        type="search" 
+                                    name="q" 
+                                    placeholder="Search anything..." 
+                                    autocomplete="off" 
+                                    required>
+                                <button type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION 1: INTRO HERO -->
+    <section class="hero" id="hero">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Suitable Control</span>
+            <h1>Our Prefects</h1>
+            <p>
+                Associating and working together to make our school a place where 
+                bulling, discrimination and inressponsible pupil are not raised.
+            </p>
+            <input type="text" id="searchInput" name="search" placeholder="Search Prefects by name or position..." />
+        </div>
+    </section>
+
+    <!-- Prefect Section -->
+    <section class="staff-prefect" id="staff-prefect">
+        <div class="prefect-grid" id="prefect-container"></div>
+    </section>
+
+
+    <!-- To Top Button -->
+    <button class="toTop" id="toTopBtn" title="Go to top">
+        <i class='bx bxs-chevron-up'></i>
+    </button>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/toTop.js"></script>
+    <script src="./js/prefects.js"></script>
+</body>
+</html>

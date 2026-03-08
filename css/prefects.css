@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+/* Hero Section */
+.hero { 
+  position: relative; 
+  padding: 5.5rem 1.5rem;
+  margin-bottom: 30px; 
+  background: #3e8ea8; 
+  color: #faf7f2; 
+  text-align: center; 
+  overflow: hidden; 
+}
+
+.hero .blob1, 
+.hero .blob2 { 
+  position: absolute; 
+  border-radius: 50%; 
+  background: #3e8ea8; 
+  opacity: 0.1; 
+  filter: blur(60px); 
+}
+
+.hero .blob1 { 
+  top: 40px; 
+  left: 40px; 
+  width: 250px; 
+  height: 250px; 
+}
+
+.hero .blob2 { 
+  bottom: 40px; 
+  right: 40px; 
+  width: 300px; 
+  height: 300px; 
+}
+
+.hero-content { 
+  position: relative; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.hero-badge { 
+  display: inline-block; 
+  padding: 15px 25px; 
+  border-radius: 999px; 
+  background: rgba(13, 10, 156, 0.2); 
+  color: #fff;
+  border: 1px solid #333; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  letter-spacing: 0.05em; 
+  margin-bottom: 1.5rem; 
+}
+
+.hero h1 { 
+  font-size: clamp(2rem, 5vw, 3.5rem); 
+  font-weight: 700; 
+  line-height: 1.15; 
+  margin-bottom: 1.5rem; 
+}
+
+.hero p { 
+  font-size: 1.125rem; 
+  max-width: 600px; 
+  margin: 0 auto 2rem; 
+  opacity: 0.9; 
+  line-height: 1.7; 
+}
+
+/* h1 {
+  color: #3e8da8;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+} */
+
+#searchInput {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+#searchInput:hover {
+  border: 2px solid #3e8da8;
+}
+
+.prefect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prefect-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  cursor: pointer;
+}
+
+.prefect-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.prefect-card:hover,
+.prefect-card:focus-within {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.prefect-card:active {
+  transform: scale(0.98);
+}
+
+.prefect-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.prefect-card:hover .prefect-img {
+  transform: scale(1.1);
+}
+
+.prefect-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.prefect-position {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}

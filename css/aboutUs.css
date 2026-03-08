@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*==============================
+ABOUT US STYLES
+============================== */
+/* Hero Section */
+.hero { 
+  position: relative; 
+  padding: 6rem 1.5rem; 
+  background: #3e8ea8; 
+  color: #faf7f2; 
+  text-align: center; 
+  overflow: hidden; 
+}
+
+.hero .blob1, 
+.hero .blob2 { 
+  position: absolute; 
+  border-radius: 50%; 
+  background: #3e8ea8; 
+  opacity: 0.1; 
+  filter: blur(60px); 
+}
+
+.hero .blob1 { 
+  top: 40px; 
+  left: 40px; 
+  width: 250px; 
+  height: 250px; 
+}
+
+.hero .blob2 { 
+  bottom: 40px; 
+  right: 40px; 
+  width: 300px; 
+  height: 300px; 
+}
+
+.hero-content { 
+  position: relative; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.hero-badge { 
+  display: inline-block; 
+  padding: 15px 25px; 
+  border-radius: 999px; 
+  background: rgba(13, 10, 156, 0.2); 
+  color: #fff;
+  border: 1px solid #333; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  letter-spacing: 0.05em; 
+  margin-bottom: 1.5rem; 
+}
+
+.hero h1 { 
+  font-size: clamp(2rem, 5vw, 3.5rem); 
+  font-weight: 700; 
+  line-height: 1.15; 
+  margin-bottom: 1.5rem; 
+}
+
+.hero p { 
+  font-size: 1.125rem; 
+  max-width: 600px; 
+  margin: 0 auto 2rem; 
+  opacity: 0.9; 
+  line-height: 1.7; 
+}
+/* AboutUs */
+.aboutUs {
+  background-color: #fff;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.origin {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+}
+
+.origin .image-wrapper {
+  text-align: center;
+}
+
+.origin .image-wrapper img {
+  width: 500px;
+  height: 500px;
+}
+
+.origin .image-wrapper .longPic {
+  width: 500px;
+  height: 590px;
+}
+
+.origin .origin-content span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.origin .origin-content {
+  font-size: 1rem;
+  letter-spacing: .8px;
+}
+
+/* aims */
+.aims {
+  background-color: #eee;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  padding-left: 5.2rem;
+}
+
+.aims span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aims .aims-content {
+  font-size: 1rem;
+}
+
+.origin-content,
+.aims {
+  color: #646464;
+}
+
+/* events */
+.event {
+  margin: 2rem 5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgBorder {
+  border-radius: 2rem;
+  padding: 40px;
+  background-color: #ddd;
+  width: 35rem;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.eventsHeader {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.events {
+  height: 5rem;
+  width: 30rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #eee;
+  border-radius: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.events:hover {
+  background-color: #fff;
+}
+
+/* ===================
+STAFFS
+================== */
+
+#staffPrefect {
+  background-color: #3e8ea865;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 1500px;
+  padding: 2rem 5.2rem;
+}
+
+.staff-card {
+  margin-left: 25px;
+  width: 20rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  opacity: 1;
+  transform: translateY(20px);
+  cursor: pointer;
+}
+
+.staff-card:hover,
+.staff-card:focus-within {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.staff-card:active {
+  transform: scale(0.9);
+}
+
+.staff-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.staff-card:hover .staff-img {
+  transform: scale(1.09);
+}
+
+.staff-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.staff-position {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.ourStaffs,
+.ourPrefects,
+.seeMoreAboutUs {
+  display: grid;
+  grid-column: 1/-1;
+}
+
+/* ==================
+PREFECTS
+==================== */
+#prefect {
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 1500px;
+  padding: 5rem 5.2rem 0;
+}
+
+.prefect-card {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  width: 15rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  opacity: 1;
+  transform: translateY(20px);
+  cursor: pointer;
+}
+
+.prefect-card:hover,
+.prefect-card:focus-within {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.prefect-card:active {
+  transform: scale(0.9);
+}
+
+.prefect-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.prefect-card:hover .prefect-img {
+  transform: scale(1.09);
+}
+
+.prefect-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.prefect-position {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.prefect a .readMoreAboutUs {
+  margin-bottom: 1rem;
+}
+
+#staffPrefect .seeMoreAboutUs {
+  margin-top: 20px;
+}
+/* ===================
+FOOTER
+=============== */
+.readMoreAboutUs {
+  width: 130px;
+  height: 45px;
+  border: 1px solid #3e8da8;
+  border-radius: 5px;
+  color: #3e8da8;
+  font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+}
+
+.readMoreAboutUs:hover {
+  background-color: #3e8da8;
+  color: #fff;
+  border: 1px solid #3e8da8;
+}
+
+@media (max-width: 816px) {  
+  .origin {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+
+  .origin .image-wrapper {
+    text-align: center;
+  }
+
+  .origin .image-wrapper .longPic {
+    width: 350px;
+    height: 460px;
+  }
+
+  .origin .origin-content span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .origin .origin-content {
+    font-size: .6rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+  }
+
+  .readMoreAboutUs {
+    width: 100px;
+    height: 35px;
+    font-size: .7rem;
+    font-weight: 700;
+  }
+}

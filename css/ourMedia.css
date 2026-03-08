@@ -1,0 +1,177 @@
+:root {
+  --cobalt: #003366;
+  --teal: #3e8da8;
+  --white: #ffffff;
+}
+
+body { font-family: sans-serif; background: #f1f2f6; margin: 0; }
+
+.mediaTitle {
+  margin: 5rem 0 2rem 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--cobalt);
+}
+
+.media-card {
+  background: var(--white); 
+  border-radius: 12px; 
+  overflow: hidden; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+  max-width: 800px; /* Changed from 60rem for better scaling */
+  margin: 0 auto 2rem auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.stage { 
+  position: relative; 
+  height: 400px; /* Increased height */
+  background: #000; 
+}
+
+.slide { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  opacity: 0; 
+  transition: opacity 0.6s ease; 
+}
+
+/* Ensure this matches the JS classToggle */
+.slide.active { 
+  opacity: 1; 
+  z-index: 1;
+}
+
+.nav-arrow { 
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: rgba(0,0,0,0.5); 
+  color: #fff; 
+  border: none; 
+  padding: 15px; 
+  cursor: pointer; 
+  z-index: 10; 
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.next { right: 0; }
+.nav-arrow:hover { background: var(--teal); }
+
+.details { padding: 20px; }
+.tag { 
+  font-size: 0.75rem; 
+  background: #eee; 
+  padding: 4px 10px; 
+  border-radius: 4px; 
+  color: var(--cobalt); 
+  font-weight: bold; 
+}
+
+.noteBig {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.noteSmall {
+  font-size: 1rem;
+}
+
+.moreImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreImg img {
+  margin-left: 25px;
+  border-radius: 15px;
+  height: 25rem;
+  width: 16rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.moreImg img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 5px rgba(0, 0, 0, 0.582);  
+}
+
+.moreImg img:nth-child(1) {
+  margin-left: 0;
+}
+
+.botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#seeMediaPage {
+  width: 130px;
+  height: 45px;
+  border: 1px solid #3e8da8;
+  border-radius: 5px;
+  color: #3e8da8;
+  font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+}
+
+#seeMediaPage:hover {
+  background-color: #3e8da8;
+  color: #fff;
+  border: 1px solid #3e8da8;
+}
+
+@media (max-width: 816px) {
+  .mediaTitle {
+    margin: 5rem 0 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cobalt);
+  }
+
+  .media-card {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+ 
+  .details { padding: 20px; }
+  .tag { 
+    font-size: 0.75rem; 
+    background: #eee; 
+    padding: 4px 10px; 
+    border-radius: 4px; 
+    color: var(--cobalt); 
+    font-weight: bold; 
+  }
+  
+  .noteBig {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .noteSmall {
+    font-size: .6rem;
+  }
+
+  .moreImg img {
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 15rem;
+    width: 11.7rem; 
+  }
+
+  #seeMediaPage {
+    width: 100px;
+    height: 35px;
+    font-size: .7rem;
+    font-weight: 700;
+  }
+
+}

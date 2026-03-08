@@ -1,0 +1,218 @@
+/* =====================
+   GLOBAL
+===================== */
+
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#f4f6f9;
+}
+
+.container{
+  width:95%;
+  max-width:1100px;
+  margin:auto;
+  padding:40px 0;
+}
+/* 
+h1{
+  color: #3e8da8;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+} */
+
+/* 
+  ======================== 
+   Hero Section
+  ======================== 
+*/
+.hero { 
+  position: relative; 
+  padding: 6rem 1.5rem; 
+  background: #3e8ea8; 
+  color: #faf7f2; 
+  text-align: center; 
+  overflow: hidden; 
+}
+
+.hero .blob1, 
+.hero .blob2 { 
+  position: absolute; 
+  border-radius: 50%; 
+  background: #3e8ea8; 
+  opacity: 0.1; 
+  filter: blur(60px); 
+}
+
+.hero .blob1 { 
+  top: 40px; 
+  left: 40px; 
+  width: 250px; 
+  height: 250px; 
+}
+
+.hero .blob2 { 
+  bottom: 40px; 
+  right: 40px; 
+  width: 300px; 
+  height: 300px; 
+}
+
+.hero-content { 
+  position: relative; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.hero-badge { 
+  display: inline-block; 
+  padding: 15px 25px; 
+  border-radius: 999px; 
+  background: rgba(13, 10, 156, 0.2); 
+  color: #fff;
+  border: 1px solid #333; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  letter-spacing: 0.05em; 
+  margin-bottom: 1.5rem; 
+}
+
+.hero h1 { 
+  font-size: clamp(2rem, 5vw, 3.5rem); 
+  font-weight: 700; 
+  line-height: 1.15; 
+  margin-bottom: 1.5rem; 
+}
+
+.hero p { 
+  font-size: 1.125rem; 
+  max-width: 600px; 
+  margin: 0 auto 2rem; 
+  opacity: 0.9; 
+  line-height: 1.7; 
+}
+/* =====================
+ SEARCH BAR
+===================== */
+
+.search-boxs{
+  width:100%;
+  padding:12px;
+  font-size:16px;
+  border-radius:8px;
+  border:2px solid #ccc;
+  transition: all 0.2s ease;
+}
+
+.search-boxs:hover{
+  border: 2px solid #2e535f;
+}
+
+/* =====================
+ STAFF ROW
+===================== */
+
+.staff{
+  background:#fff;
+  border-radius:10px;
+  margin-bottom:15px;
+  padding:15px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  transition:0.3s ease;
+  opacity:0;
+  transform:translateY(40px);
+}
+
+.staff.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.staff:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 18px rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.staff:active{
+  transform:scale(.98);
+}
+
+/* image */
+.staff img{
+  width:80px;
+  height:80px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* details */
+.info{
+  display:flex;
+  flex-direction:column;
+}
+
+.name{
+  font-weight:bold;
+  font-size:18px;
+}
+
+.position{
+  color: #666;
+}
+
+/* TOGGLE ICON STYLING */
+.toggle-icon {
+  margin-left: auto;
+  font-size: 38px;
+  color: #3e8da8;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* =====================
+ EXPANDED VIEW
+===================== */
+
+.staff.expanded{
+  flex-direction:row;
+  align-items:flex-start;
+  padding:25px;
+}
+
+.staff.expanded img{
+  width:200px;
+  height:200px;
+}
+
+.staff.expanded .toggle-icon {
+  transform: rotate(315deg);
+  color: #d9534f; /* Changes to a soft red when open */
+}
+
+.history{
+  margin-top:10px;
+  color:#444;
+  line-height:1.5;
+}
+
+/* =====================
+ RESPONSIVE
+===================== */
+
+@media(max-width:700px){
+
+.staff{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.staff.expanded{
+  flex-direction:column;
+}
+
+}
