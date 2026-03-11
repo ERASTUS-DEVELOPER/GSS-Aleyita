@@ -4,7 +4,7 @@ const galleryData = [
         id: 1,
         title: 'Science Lab Discovery',
         description: 'Students exploring chemistry experiments in our laboratory',
-        image: './asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg',
+        image: './asset/Staffs/Staffs/IMG_20260421_215042.jpg',
         category: 'academics',
         date: '2026-04-05'
     },
@@ -12,7 +12,7 @@ const galleryData = [
         id: 2,
         title: 'Championship Game Victory',
         description: 'Our team celebrates their regional championship win',
-        image: './asset/Casa_Para_Estudiantes_Atras_by_estevao.jpg',
+        image: './asset/Staffs/Staffs/IMG_20260421_214013.jpg',
         category: 'sports',
         date: '2026-04-03'
     },
@@ -20,7 +20,7 @@ const galleryData = [
         id: 3,
         title: 'Spring Concert',
         description: 'Our music department performs at the annual spring concert',
-        image: './asset/Exterior_Classic_house_by_GTOdesign.jpg',
+        image: './asset/Staffs/Staffs/IMG_20260421_215013.jpg',
         category: 'arts',
         date: '2026-03-30'
     },
@@ -35,98 +35,378 @@ const galleryData = [
     {
         id: 5,
         title: 'Debate Team Success',
-        description: 'Students working together on a group project during class',
-        image: './asset/media page academics pictures/debate team 1.jpg',
+        description: 'Our debate participant being awarded',
+        image: './asset/Media ACADEMIC  Section/debate team 1.jpg',
         category: 'academics',
         date: '2026-04-02'
     },
     {
         id: 6,
         title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/media page academics pictures/debate team 2.jpg',
+        description: 'Our debate participant being awarded',
+        image: './asset/Media ACADEMIC  Section/debate team 2.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 7,
         title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/media page academics pictures/debate team 3.jpg',
+        description: 'Our debate participant being awarded',
+        image: './asset/Media ACADEMIC  Section/debate team 3.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 8,
         title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/media page academics pictures/debate team 4.jpg',
+        description: 'Our debate participant being awarded',
+        image: './asset/Media ACADEMIC  Section/debate team 4.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 9,
         title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/media page academics pictures/debate team 5.jpg',
+        description: 'Our debate team representing the school',
+        image: './asset/Media ACADEMIC  Section/debate team 5.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 10,
         title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/media page academics pictures/debate team 6.jpg',
+        description: 'Our debate teacher being awarded',
+        image: './asset/Media ACADEMIC  Section/debate team 6.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 11,
         title: 'Collaborative Learning',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/media page academics pictures/debate team 7.jpg',
+        description: 'Our debate participants preparation',
+        image: './asset/Media ACADEMIC  Section/debate team 7.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 12,
-        title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/Exterior_Classic_house_by_GTOdesign.jpg',
+        title: 'Award Giving',
+        description: 'Our determined student being awarded',
+        image: './asset/Media ACADEMIC  Section/award giving 1.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 13,
-        title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/Exterior_Classic_house_by_GTOdesign.jpg',
+        title: 'Award Giving',
+        description: 'Our determined student being awarded',
+        image: './asset/Media ACADEMIC  Section/award giving 2.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 14,
-        title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/Exterior_Classic_house_by_GTOdesign.jpg',
-        category: 'academics',
-        date: '2026-03-28'
-    },
-    {
-        id: 6,
-        title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/Exterior_Classic_house_by_GTOdesign.jpg',
+        title: 'Award Giving',
+        description: 'Our determined student being awarded',
+        image: './asset/Media ACADEMIC  Section/award giving 3.jpg',
         category: 'academics',
         date: '2026-03-28'
     },
     {
         id: 15,
-        title: 'Debate Team Success',
-        description: 'Our debate team advances to the state tournament',
-        image: './asset/Exterior_Classic_house_by_GTOdesign.jpg',
+        title: 'Award Giving',
+        description: 'Our determined student being awarded',
+        image: './asset/Media ACADEMIC  Section/award giving 4.jpg',
         category: 'academics',
         date: '2026-03-28'
+    },
+    {
+        id: 16,
+        title: 'Award Giving',
+        description: 'Our determined student being awarded',
+        image: './asset/Media ACADEMIC  Section/award giving 5.jpg',
+        category: 'academics',
+        date: '2026-03-28'
+    },
+    {
+        id: 17,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 1.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 18,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 2.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 19,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 3.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 20,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 4.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 21,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 5.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 22,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 6.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 23,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 7.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 24,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 8.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 25,
+        title: 'Career Day',
+        description: 'A speaker with our V.P Admin',
+        image: './asset/Media ART Section/career day 9.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 26,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 10.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 27,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 11.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 28,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 12.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 29,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 13.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 30,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 14.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 31,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 15.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 32,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 16.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 33,
+        title: 'Career Day',
+        description: 'Pupils dancing in their cultural attire',
+        image: './asset/Media ART Section/career day 17.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 34,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 18.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 35,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 19.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 36,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 20.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 37,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 21.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 38,
+        title: 'Career Day',
+        description: 'Our Loving Director Prinipal',
+        image: './asset/Media ART Section/career day 22.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 39,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 23.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 40,
+        title: 'Career Day',
+        description: 'A generous speaker',
+        image: './asset/Media ART Section/career day 24.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 41,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 25.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 42,
+        title: 'Career Day',
+        description: 'A generous speaker',
+        image: './asset/Media ART Section/career day 26.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 43,
+        title: 'Career Day',
+        description: 'Our galant host',
+        image: './asset/Media ART Section/career day 27.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 44,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 28.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 45,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 29.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 46,
+        title: 'Career Day',
+        description: 'Eligant Administratives/Speakers',
+        image: './asset/Media ART Section/career day 30.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 47,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 31.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 48,
+        title: 'Career Day',
+        description: 'Student explaining their career path',
+        image: './asset/Media ART Section/career day 32.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 49,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 33.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 50,
+        title: 'Career Day',
+        description: 'Our able students',
+        image: './asset/Media ART Section/career day 34.jpg',
+        category: 'arts',
+        date: '2026-02-10'
+    },
+    {
+        id: 51,
+        title: 'Career Day',
+        description: 'A generous speaker',
+        image: './asset/Media ART Section/career day 35.jpg',
+        category: 'arts',
+        date: '2026-02-10'
     }
 ];
 

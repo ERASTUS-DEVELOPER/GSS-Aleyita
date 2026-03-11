@@ -102,13 +102,17 @@ ABOUT US STYLES
 }
 
 .origin .image-wrapper img {
+  margin-top: 9px;
+  border-radius: 15px;
   width: 500px;
-  height: 500px;
+  height: 480px;
 }
 
 .origin .image-wrapper .longPic {
+  margin-top: 7px;
+  border-radius: 15px;
   width: 500px;
-  height: 590px;
+  height: 570px;
 }
 
 .origin .origin-content span {
@@ -197,7 +201,7 @@ STAFFS
 ================== */
 
 #staffPrefect {
-  background-color: #3e8ea865;
+  /* background-color: #3e8ea865; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
