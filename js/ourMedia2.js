@@ -2,27 +2,27 @@
 const galleryData = [
     {
         id: 1,
-        title: 'Science Lab Discovery',
-        description: 'Students exploring chemistry experiments in our laboratory',
-        image: './asset/Staffs/Staffs/IMG_20260421_215042.jpg',
+        title: 'Director Principal',
+        description: 'Our Loving Director Principal',
+        image: './asset/Staffs/Staffs/principal 12.jpg',
         category: 'academics',
-        date: '2026-04-05'
+        date: '2025-02-10'
     },
     {
         id: 2,
-        title: 'Championship Game Victory',
-        description: 'Our team celebrates their regional championship win',
-        image: './asset/Staffs/Staffs/IMG_20260421_214013.jpg',
-        category: 'sports',
-        date: '2026-04-03'
+        title: 'Vice Principal Admin.',
+        description: 'Our Able Vice Principal Admin.',
+        image: './asset/Staffs/Staffs/v.p admin..jpg',
+        category: 'academics',
+        date: '2025-02-10'
     },
     {
         id: 3,
-        title: 'Spring Concert',
-        description: 'Our music department performs at the annual spring concert',
-        image: './asset/Staffs/Staffs/IMG_20260421_215013.jpg',
-        category: 'arts',
-        date: '2026-03-30'
+        title: 'Vice Principal Acad.',
+        description: 'Our Able Vice Principal Acad.',
+        image: './asset/Staffs/Staffs/v.p acad..jpg',
+        category: 'academics',
+        date: '2025-10-30'
     },
     {
         id: 4,

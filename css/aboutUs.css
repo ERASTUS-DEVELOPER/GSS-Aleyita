@@ -1,3 +1,11 @@
+/*
+  ========================================================================
+  GSS ALEYITA - ABOUT US COMPREHENSIVE RESPONSIVE STYLES
+  Updated to use CSS math functions (clamp, min, max) for perfect 
+  fluid scaling across all mobile devices, tablets, and wide screens.
+  ========================================================================
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +17,21 @@ html {
 }
 
 /*==============================
-ABOUT US STYLES
+  GLOBAL DESIGN UTILITIES
 ============================== */
-/* Hero Section */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/*==============================
+  HERO SECTION
+============================== */
 .hero { 
+  margin-top: 1.2rem;
   position: relative; 
-  padding: 6rem 1.5rem; 
+  /* Vertical padding scales dynamically with viewport height */
+  padding: clamp(3.5rem, 10vh, 7rem) 1.5rem; 
   background: #3e8ea8; 
   color: #faf7f2; 
   text-align: center; 
@@ -33,129 +50,146 @@ ABOUT US STYLES
 .hero .blob1 { 
   top: 40px; 
   left: 40px; 
-  width: 250px; 
-  height: 250px; 
+  width: min(35vw, 250px); 
+  height: min(35vw, 250px); 
 }
 
 .hero .blob2 { 
   bottom: 40px; 
   right: 40px; 
-  width: 300px; 
-  height: 300px; 
+  width: min(45vw, 300px); 
+  height: min(45vw, 300px); 
 }
 
 .hero-content { 
   position: relative; 
-  max-width: 800px; 
+  width: min(100%, 800px); 
   margin: 0 auto; 
 }
 
 .hero-badge { 
   display: inline-block; 
-  padding: 15px 25px; 
+  padding: clamp(10px, 2vh, 15px) clamp(15px, 3vw, 25px); 
   border-radius: 999px; 
   background: rgba(13, 10, 156, 0.2); 
   color: #fff;
-  border: 1px solid #333; 
-  font-size: 1rem; 
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+  font-size: clamp(0.8rem, 1.8vw, 1rem); 
   font-weight: 600; 
   letter-spacing: 0.05em; 
   margin-bottom: 1.5rem; 
 }
 
 .hero h1 { 
-  font-size: clamp(2rem, 5vw, 3.5rem); 
+  font-size: clamp(1.8rem, 5vw, 3.5rem); 
   font-weight: 700; 
   line-height: 1.15; 
   margin-bottom: 1.5rem; 
 }
 
 .hero p { 
-  font-size: 1.125rem; 
+  font-size: clamp(0.95rem, 2.2vw, 1.125rem); 
   max-width: 600px; 
   margin: 0 auto 2rem; 
   opacity: 0.9; 
   line-height: 1.7; 
 }
-/* AboutUs */
+
+/*==============================
+  ABOUT US & ORIGIN SECTION
+============================== */
 .aboutUs {
   background-color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin-top: 10px;
-  transition: all 0.4s ease-in-out;
+  padding: clamp(2rem, 6vh, 5rem) 1rem;
 }
 
 .origin {
-  text-align: left;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 0;
+  /* Auto-fit handles wrapping gracefully without rigid layout breaks */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
+  gap: clamp(2rem, 5vw, 4rem);
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  align-items: center;
 }
 
 .origin .image-wrapper {
   text-align: center;
+  width: 100%;
 }
 
 .origin .image-wrapper img {
-  margin-top: 9px;
+  width: min(100%, 500px);
+  height: auto;
+  aspect-ratio: 500 / 700;
+  object-fit: cover;
   border-radius: 15px;
-  width: 500px;
-  height: 480px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .origin .image-wrapper .longPic {
-  margin-top: 7px;
+  width: min(100%, 1200px);
+  height: clamp(320px, 55vh, 570px);
+  object-fit: cover;
   border-radius: 15px;
-  width: 500px;
-  height: 570px;
-}
-
-.origin .origin-content span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .origin .origin-content {
-  font-size: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  text-align: left;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
   letter-spacing: .8px;
+  color: #646464;
 }
 
-/* aims */
+.origin .origin-content span {
+  font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+  font-weight: bold;
+  color: #3e8da8;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*==============================
+  AIMS SECTION
+============================== */
 .aims {
   background-color: #eee;
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
-  padding-left: 5.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(2.5rem, 6vh, 5rem) clamp(1rem, 5vw, 5.2rem);
+  color: #646464;
 }
 
 .aims span {
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 3.5vw, 1.5rem);
   font-weight: bold;
-  color: #000;
+  color: #3e8da8;
+  display: block;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .aims .aims-content {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
 }
 
-.origin-content,
-.aims {
-  color: #646464;
-}
-
-/* events */
+/*==============================
+  EVENTS SECTION
+============================== */
 .event {
-  margin: 2rem 5rem;
+  padding: clamp(2rem, 5vh, 4rem) clamp(1rem, 5vw, 5rem);
   text-align: center;
   display: flex;
   align-items: center;
@@ -164,62 +198,62 @@ ABOUT US STYLES
 
 .bgBorder {
   border-radius: 2rem;
-  padding: 40px;
+  padding: clamp(20px, 5vw, 40px);
   background-color: #ddd;
-  width: 35rem;
-  display: block;
-  justify-content: center;
-  text-align: center;
+  width: min(100%, 35rem);
 }
 
 .eventsHeader {
-  font-size: 2rem;
+  color: #3e8da8;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .events {
-  height: 5rem;
-  width: 30rem;
-  font-size: 2rem;
+  min-height: 5rem;
+  width: min(100%, 30rem);
+  font-size: clamp(1.1rem, 3.5vw, 2rem);
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   background-color: #eee;
   border-radius: 20px 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
   transition: all 0.3s ease-in-out;
 }
 
-.events:hover {
+.events:hover,
+.events:focus {
   background-color: #fff;
+  transform: scale(1.01);
 }
 
-/* ===================
-STAFFS
-================== */
-
+/*==============================
+  STAFF MEMBERS SECTION
+============================== */
 #staffPrefect {
-  /* background-color: #3e8ea865; */
+  color: #3e8da8;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: clamp(20px, 3vw, 30px);
   max-width: 1500px;
-  padding: 2rem 5.2rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vh, 4rem) clamp(1rem, 5vw, 5.2rem);
 }
 
 .staff-card {
-  margin-left: 25px;
-  width: 20rem;
+  width: min(100%, 20rem);
+  margin: 0 auto;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
-  opacity: 1;
-  transform: translateY(20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -230,12 +264,12 @@ STAFFS
 }
 
 .staff-card:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .staff-img {
-  width: 100px;
-  height: 100px;
+  width: clamp(85px, 12vw, 100px);
+  height: clamp(85px, 12vw, 100px);
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -243,52 +277,44 @@ STAFFS
 }
 
 .staff-card:hover .staff-img {
-  transform: scale(1.09);
+  transform: scale(1.08);
 }
 
 .staff-name {
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .staff-position {
   color: #777;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 8px;
 }
 
-.ourStaffs,
-.ourPrefects,
-.seeMoreAboutUs {
-  display: grid;
-  grid-column: 1/-1;
-}
-
-/* ==================
-PREFECTS
-==================== */
+/*==============================
+  PREFECTS SECTION
+============================== */
 #prefect {
+  color: #3e8da8;
   background-color: #eee;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: clamp(20px, 3vw, 30px);
   max-width: 1500px;
-  padding: 5rem 5.2rem 0;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vh, 5rem) clamp(1rem, 5vw, 5.2rem);
 }
 
 .prefect-card {
-  margin-left: 25px;
-  margin-bottom: 25px;
-  width: 15rem;
+  width: min(100%, 15rem);
+  margin: 0 auto 25px;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
-  opacity: 1;
-  transform: translateY(20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -299,12 +325,12 @@ PREFECTS
 }
 
 .prefect-card:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .prefect-img {
-  width: 100px;
-  height: 100px;
+  width: clamp(85px, 12vw, 100px);
+  height: clamp(85px, 12vw, 100px);
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -312,79 +338,58 @@ PREFECTS
 }
 
 .prefect-card:hover .prefect-img {
-  transform: scale(1.09);
+  transform: scale(1.08);
 }
 
 .prefect-name {
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .prefect-position {
   color: #777;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 8px;
 }
 
-.prefect a .readMoreAboutUs {
-  margin-bottom: 1rem;
-}
-
-#staffPrefect .seeMoreAboutUs {
-  margin-top: 20px;
-}
-/* ===================
-FOOTER
-=============== */
+/*==============================
+  FOOTER & BUTTONS
+============================== */
 .readMoreAboutUs {
-  width: 130px;
-  height: 45px;
+  width: clamp(110px, 15vw, 130px);
+  height: clamp(38px, 5vh, 45px);
   border: 1px solid #3e8da8;
   border-radius: 5px;
   color: #3e8da8;
   font-weight: bolder;
-  transition: all 0.5s ease-in-out;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
 .readMoreAboutUs:hover {
   background-color: #3e8da8;
   color: #fff;
-  border: 1px solid #3e8da8;
 }
 
-@media (max-width: 816px) {  
-  .origin {
-    margin-top: 5rem;
-    margin-bottom: 0;
-  }
+.ourStaffs,
+.ourPrefects,
+.seeMoreAboutUs {
+  display: grid;
+  grid-column: 1 / -1;
+  text-align: center;
+  justify-content: center;
+}
 
-  .origin .image-wrapper {
-    text-align: center;
-  }
+#staffPrefect .seeMoreAboutUs {
+  margin-top: 20px;
+}
 
-  .origin .image-wrapper .longPic {
-    width: 350px;
-    height: 460px;
-  }
-
-  .origin .origin-content span {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .origin .origin-content {
-    font-size: .6rem;
-    font-weight: 500;
-    letter-spacing: .8px;
-  }
-
-  .readMoreAboutUs {
-    width: 100px;
-    height: 35px;
-    font-size: .7rem;
-    font-weight: 700;
+/* Minimalistic fallback for layout flow on extremely small mobile windows */
+@media (max-width: 480px) {
+  .origin-content {
+    text-align: center !important;
   }
 }

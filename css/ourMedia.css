@@ -90,8 +90,9 @@ body { font-family: sans-serif; background: #f1f2f6; margin: 0; }
 .moreImg img {
   margin-left: 15px;
   border-radius: 15px;
-  height: 25rem;
-  width: 16rem;
+  height: auto;
+  width: min(100%, 16rem);
+  aspect-ratio: 500 / 600;
   transition: all 0.3s ease-in-out;
 }
 

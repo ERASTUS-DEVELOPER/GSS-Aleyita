@@ -1,19 +1,19 @@
 const prefects = [
       { name: "Gidoen Erastus Jesimiel", position: "Head-Boy", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Ukadike Rejoice", position: "Head-Girl", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Ibrahim Fawas", position: "Ass. Head-Boy", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "something neimat", position: "Ass. Head-Girl", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Ukadike Chinecherem Rejoice", position: "Head-Girl", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Ibrahim Fawas", position: "Assistant Head-Boy", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Mairiga Aliyu Naimat", position: "Assistant Head-Girl", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
       { name: "Silas Wapnen Peter", position: "Labour Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Bonder igbo chife", position: "Ass. Labour Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Abdulkarim Basit", position: "Social Prefect Boys", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Michel Faith", position: "Social Prefect Girls", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "something Fumi", position: "Time Kepper", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Patricia Anderson", position: "Consultant", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Christopher Thomas", position: "Analyst", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Barbara Jackson", position: "Coordinator", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Daniel White", position: "Technician", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Susan Harris", position: "Supervisor", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
-      { name: "Matthew Clark", position: "Intern", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"}
+      { name: "Obialu Emmanuel", position: "Assistant Labour Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Abdulkarim Basit", position: "Social Prefect (Boys)", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Mike Faith", position: "Social Prefect (Girls)", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Victor Fumi Deborah", position: "Time Kepper", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Odey Sophia Ogeyi Onome", position: "Assistant Time Kepper", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Egbunu Aishat", position: "Health Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Olagunju Eunice Oluwadarasimi", position: "Assistant Health Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Samila Divine Zichat", position: "Assembly Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      { name: "Philibus Faith Godiya", position: "Assistant Assembly Prefect", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"},
+      // { name: "Matthew Clark", position: "Intern", img: "./asset/Casa_Para_Estudiantes_Atras_2_by_estevao.jpg"}
     ];
 
     const container = document.getElementById("prefect-container");

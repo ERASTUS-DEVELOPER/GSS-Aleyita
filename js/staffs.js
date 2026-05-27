@@ -3,7 +3,7 @@
 ===================== */
 
 const staffs = Array.from({length:15}, (_,i)=>({
-  name:["Mrs. Tonte",
+  name:["Mrs. Agedah Tonte",
     "Mr. Mallam",
     "Mr. Paul",
     "Mrs. Bursar",
@@ -28,14 +28,24 @@ const staffs = Array.from({length:15}, (_,i)=>({
     "********"
   ][i%15],
 
-  image:[`./asset/Staffs/main staffs/principal.jpg`,
-    './asset/Staffs/main staffs/vice prinpal admin..jpg',
-    './asset/Staffs/main staffs/vice principal acad..jpg',
+  image:[`./asset/Staffs/Staffs/principal 12.jpg`,
+    './asset/Staffs/Staffs/v.p admin..jpg',
+    './asset/Staffs/Staffs/v.p acad..jpg',
     './asset/Staffs/main staffs/mrs. burser.jpg',
     './asset/Staffs/main staffs/mrs. inedia.jpg',
     './asset/Staffs/main staffs/mrs. vivan.jpg',
   ][i%6],
-  history:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur iusto adipisci dolores, maiores blanditiis deleniti at ratione optio reiciendis, explicabo nam delectus, sunt quo exercitationem quisquam ut aperiam labore quidem.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur iusto adipisci dolores, maiores blanditiis deleniti at ratione optio reiciendis, explicabo nam delectus, sunt quo exercitationem quisquam ut aperiam labore quidem.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur iusto adipisci dolores, maiores blanditiis deleniti at ratione optio reiciendis, explicabo nam delectus, sunt quo exercitationem quisquam ut aperiam labore quidem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. This staff member has years of professional experience contributing to organizational growth and innovation."
+  history:[
+    "30 yrs ago, i graduated from the university of ibadan, and became a teacher in abuja \
+    in the year 2001 after working in lagos as a teacher for 6 yrs. I have had and learnt several cources, \
+    upgrading my-self in my teaching profession in Mathematics. I have held all positions in my teaching profession \
+    HOD, Senior Mistress, and more, and now a pioneer DIrector principal in Government Secondary School Aleyita.",
+
+    // "30 yrs ago, i graduated from the university of ibadan, and became a teacher in abuja \
+    // in the year 2001 after working in lagos as a teacher for 6 yrs. I have had and learnt several cources, \
+    // upgrading my-self in my teaching profession in Mathematics. I have held all positions in my teaching profession \
+    // HOD, Senior Mistress, and more, and now a pioneer DIrector principal in Government Secondary School Aleyita.",
+][i%1]
 }));
 
 /* =====================
